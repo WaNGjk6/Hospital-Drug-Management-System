@@ -1,0 +1,50 @@
+# 编译生成的 class 文件
+*.class
+
+# 日志文件
+*.log
+
+# 打包生成的文件
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven 生成的 target 目录
+target/
+
+# IDE 相关配置（IntelliJ IDEA）
+.idea/
+*.iml
+out/
+
+# Eclipse 相关文件
+.classpath
+.project
+.settings/
+bin/
+
+# NetBeans 相关目录
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code 相关文件
+.vscode/
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 其他临时文件或目录
+.mtj.tmp/
+hs_err_pid*
+
+# 如果存在敏感的配置文件（如 application-local.yml）请将其忽略，
+# 但注意如果 application.yml 中不含敏感信息，可以提交。
+application-local.yml

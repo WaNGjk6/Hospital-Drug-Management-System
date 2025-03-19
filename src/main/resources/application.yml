@@ -1,0 +1,21 @@
+
+server:
+  port: 8090
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spdrug?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: LELE2003ASD
+
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  mvc:
+    static-path-pattern: /static/**
+
+  thymeleaf:
+    prefix: classpath:/templates
+
+    cache: false
