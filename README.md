@@ -13,7 +13,7 @@
 - **后端**：Spring Boot + MyBatis Plus + Spring MVC
 - **前端**：Layui + Thymeleaf
 - **数据库**：MySQL
-- **其他**：Spring Security（用户管理）、Lombok、Maven
+- **其他**：Shiro（用户权限管理）、Lombok、Maven
 
 ## 📦 快速启动
 ```bash
