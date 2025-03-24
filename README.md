@@ -18,7 +18,8 @@
 ## 📦 快速启动
 ```bash
 克隆项目
+使用数据库脚本 spdrug.sql快速创建数据库
 配置 application.yml 数据库信息
 运行 Application.java
-访问 http://localhost:8080
-数据库脚本 spdrug.sql
+访问 http://localhost:8090
+
