@@ -1,15 +1,25 @@
-
 server:
   port: 8090
-
+  servlet:
+    session:
+      cookie:
+        secure: true       # 强制使用安全Cookie
+        same-site: none    # 跨站请求需要（需配合secure=true）
+  forward-headers-strategy: framework
 
 spring:
+  spring:
+    thymeleaf:
+      cache: false
+      # 正确添加Shiro方言配置
+      extra-dialects: shiro
+
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/spdrug?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
-    username: root
-    password: LELE2003ASD
-
+    username: xxx
+    password: xxx
     type: com.alibaba.druid.pool.DruidDataSource
 
   mvc:
@@ -17,5 +27,4 @@ spring:
 
   thymeleaf:
     prefix: classpath:/templates
-
     cache: false
